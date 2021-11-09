@@ -3,7 +3,7 @@
 import socket
 import sys
 
-DNS_PORT=9999
+DNS_PORT=53
 
 
 HOST, PORT = "localhost", DNS_PORT

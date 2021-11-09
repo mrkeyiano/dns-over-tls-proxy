@@ -4,7 +4,7 @@ import socket, threading, socketserver
 from dnslib import *
 import ssl, struct, sys, certifi
 
-DNS_PORT=9999
+DNS_PORT=53
 DNS_HOST="0.0.0.0"
 
 class ThreadedUDPServer(socketserver.ThreadingMixIn, socketserver.UDPServer):

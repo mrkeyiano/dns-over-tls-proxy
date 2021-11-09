@@ -12,5 +12,5 @@ services:
     container_name: "dnsproxy"
     restart: always
     ports:
-      - "9999:9999/tcp"
-      - "9999:9999/udp"
+      - "8989:53/tcp"
+      - "8989:53/udp"

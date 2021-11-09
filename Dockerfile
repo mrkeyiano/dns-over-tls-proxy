@@ -5,7 +5,7 @@ ENV prot="${protocol}"
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
-EXPOSE 9999/tcp
-EXPOSE 9999/udp
+EXPOSE 53/tcp
+EXPOSE 53/udp
 
 CMD python3 ./dnsproxy.py ${prot}
