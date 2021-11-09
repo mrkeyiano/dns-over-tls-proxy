@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  dnsproxy:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      args:
+        protocol: "tcp" #change value to "udp" for udp connections, rebuild with docker-compose up --build
+
+    container_name: "dnsproxy"
+    restart: always
+    ports:
+      - "9999:9999/tcp"
+      - "9999:9999/udp"
